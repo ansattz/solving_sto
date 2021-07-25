@@ -14,17 +14,23 @@ para a disciplina Computação I """
 
 # Exercício 2.
 # Quantos carros necessário para a viagem com input sendo número de pessoas(x) e capacidade de carros não convencionais(y).
-# def carros(x,y):
-#    ppl_pla=int(x/5)
-#    nconv_cars_pla=int(int(x%5)/y)
-#    return ppl_pla + nconv_cars_pla
+# def carros(x,y=5):
+#     ppl_pla=int(x//y)
+#     if x%y>0:
+#         return ppl_pla + 1
+#     else:
+#         return ppl_pla
+
+# print(carros(12))
 
 
 # Exercício 3.
 # Quantos bolos o rapaz consegue fazer com os ingredientes.
 # def bolos(x,y,z):
-#     i1=x/2
-#     i2=y/3
-#     i3=z/5
-#     qtbolo=int((i1 + i2 + i3)/3)
+#     i1=int(x/2)
+#     i2=int(y/3)
+#     i3=int(z/5)
+#     qtbolo=min(i1,i2,i3)
 #     return qtbolo
+
+# print(bolos(20,15,500))
