@@ -1,5 +1,4 @@
-""" Primeira lista de exercícios que foi proposta no endereço machineteachin.tech 
-para a disciplina Computação I """
+""" machineteachin.tech I """
 # Exercício 1.
 # Número de bombons com input sendo o quanto de dinheiro possui para comprar(x) e o preço do bombom(y).
 # def num_bombons(x,y):

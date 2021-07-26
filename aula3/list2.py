@@ -1,5 +1,4 @@
-""" Segunda lista de exercícios proposta no endereço machineteachin.tech
-para a disciplina de Computação I """
+""" machineteachin.tech II """
 # Exercício 1.
 # Teste da tricotomia. A função retorna uma resposta dizendo se um número é positivo, negativo ou zero.
 # def PosNegZero(x):
