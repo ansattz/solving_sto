@@ -14,7 +14,7 @@
 # Exercício 2.
 # Quantos carros necessário para a viagem com input sendo número de pessoas(x) e capacidade de carros não convencionais(y).
 # def carros(x,y=5):
-#     ppl_pla=int(x//y)
+#     ppl_pla=int(x/y)
 #     if x%y>0:
 #         return ppl_pla + 1
 #     else:
