@@ -1,4 +1,4 @@
-""" machineteachin.tech I """
+""" machineteachin.tech II """
 # Exercício 1.
 # Número de bombons com input sendo o quanto de dinheiro possui para comprar(x) e o preço do bombom(y).
 # def num_bombons(x,y):
@@ -6,20 +6,21 @@
 #       qbombons=int(x/y)
 #       print(qbombons)
 #    except:
-#       print("Você pode pegar os bombons de graça.")
+#       print("Você pode pegar os bombons de graça :).")
 
 # num_bombons(50,0)
 
 
 # Exercício 2.
-# Quantos carros necessário para a viagem com input sendo número de pessoas(x) e capacidade de carros não convencionais(y).
 # def carros(x,y=5):
+#     """ A função retorna a quantidade de carros necessários dada a quantidade de pessoas
+#     obedecendo a condição de que os carros que não possuem capacidade 5 sejam considerados;
+#     int, int -> int """
 #     ppl_pla=int(x/y)
 #     if x%y>0:
 #         return ppl_pla + 1
 #     else:
 #         return ppl_pla
-
 # print(carros(12))
 
 
