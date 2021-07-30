@@ -2,10 +2,10 @@
 # DRE: 121062791
 
 # 1  - Não delete nem modifique esta linha
+def abss(x):
     """ Retornar o valor absoluto de inteiros e de números complexos;
     int -> float
     complex -> float """
-def abss(x):
     md=(x**2)**0.5
     return md
 
