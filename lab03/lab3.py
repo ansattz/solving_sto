@@ -28,13 +28,13 @@ print(qrreal(6,-12,-210))
 
 
 #3  - Não delete nem modifique esta linha
-def strrep(str,n):
+def strrep(str,x):
     """ A função retorna uma string com n repetições;
     str, int -> str """
-    return str*n
+    return str*x
 str="Feliz aniversário!!\n"
 
-print(strrep(str, 5))
+print(strrep(str, 50000))
 
 
 #4  - Não delete nem modifique esta linha
@@ -65,14 +65,14 @@ def funcp(x):
     """ A função retorna a imagem de um função matemática definida em partes para valores
     maiores ou iguais a 0;
     float -> float """
-    f_afim=x
+    f_id=x
     f_const1=2
     f_const2=3
     f_quad=x**2-10*x+28
     if x<=0:
         return 0
     elif x>0 and x<=2:
-        return f_afim
+        return f_id
     elif x>2 and x<=3.5:
         return f_const1
     elif x>3.5 and x<=5:
