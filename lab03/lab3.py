@@ -28,13 +28,12 @@ print(qrreal(6,-12,-210))
 
 
 #3  - Não delete nem modifique esta linha
-def strrep(str,x):
+def strrep(strg,x):
     """ A função retorna uma string com n repetições;
     str, int -> str """
-    return str*x
-str="Feliz aniversário!!\n"
+    return strg*x
 
-print(strrep(str, 50000))
+print(strrep('Feliz aniversário!!\n', 5000))
 
 
 #4  - Não delete nem modifique esta linha
