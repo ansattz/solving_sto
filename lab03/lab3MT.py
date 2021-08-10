@@ -1,5 +1,6 @@
-# Nome: Douglas Vieira dos Santos
-# DRE: 121062791
+# Douglas Vieira
+# @ansattz
+
 # Exercício 1.
 def PosNegZero(x):
     """ Teste de tricotomia com apenas uma variável;
