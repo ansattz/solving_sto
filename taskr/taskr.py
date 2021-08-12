@@ -1,9 +1,7 @@
 # Douglas Vieira
 # @ansattz
-# Este pequeno programa que denominei de 'taskr' é um pequeno script de propósito simples
-# para organizar as disciplinas e suas informações mais importantes. Esta é a primeira versão 
-# deste programa e possivelmente ele possa sofrer expansões no futuro como o desenvolvimento de uma GUI, 
-# um banco de dados para cada disciplina contendo conteúdos fundamentais para estudo e envio de mensagens por email.
+
+
 import readline
 taskr = {}
 
@@ -174,7 +172,7 @@ def imprimir_menu():
     print('===================================================')
 
 
-# Aqui começa o programa
+# START
 # As instruções de sequência e entrada para o menu do programa
 carregar()
 while True:

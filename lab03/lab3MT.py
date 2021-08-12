@@ -1,6 +1,7 @@
 # Douglas Vieira
 # @ansattz
 
+
 # Exercício 1.
 def PosNegZero(x):
     """ Teste de tricotomia com apenas uma variável;

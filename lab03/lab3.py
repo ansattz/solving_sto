@@ -1,6 +1,7 @@
 # Douglas Vieira
 # @ansattz
 
+
 # 1  - Não delete nem modifique esta linha
 def abss(x):
     """ Retornar o valor absoluto de inteiros e de números complexos;
