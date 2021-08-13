@@ -73,9 +73,13 @@ def traducao_RNAm(st):
     return tRNA
 
 
-#2 O usuário precisa saber que a sequência pode ter sido digitada incorretamente. 
+#2 O usuário precisa saber que a sequência pode ter sido digitada incorretamente.
+# Deixarei uma sugestão mais elaborada dessa solução, porém, mantenho o dicionário simplificado.
+ 
 # def traducao_RNAm(st):
 #     try:
+#         startRNAm = {"AUG": "METIONINA"}
+#         stopRNAm = {"UAA": "STOP", "UAG": "STOP", "UGA": "STOP"}
 #         RNAxAm = {
 #             "UUU": "Phe",
 #             "CUU": "Leu",
@@ -85,11 +89,16 @@ def traducao_RNAm(st):
 #             "UAU": "Tyr",
 #             "CAA": "Gln"
 #         }
-        
-#         tRNA = RNAxAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + RNAxAm[st[6:9]]
-#         return tRNA
+#         if st[0:3] == "AUG":
+#             return startRNAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + RNAxAm[st[6:9]]
+#         elif "UAA" == st[6:9] or "UAG" == st[6:9] or "UGA" == st[6:9]:
+#             return RNAxAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + stopRNAm[st[6:9]]
+#         else:
+#             return RNAxAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + RNAxAm[st[6:9]]
 #     except KeyError:
-#         print('Sequência incorreta!')
+#         return 'Sequência incorreta!'
+# while True:
+#     print(traducao_RNAm(input("Sequência: ")))
 
 
 #Casos de teste da questão 2 - Não delete nem modifique esta linha

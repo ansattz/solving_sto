@@ -1,9 +1,7 @@
-# Douglas Vieira
-# @ansattz
-
-
 def traducao_RNAm(st):
     try:
+        startRNAm = {"AUG": "METIONINA"}
+        stopRNAm = {"UAA": "STOP", "UAG": "STOP", "UGA": "STOP"}
         RNAxAm = {
             "UUU": "Phe",
             "UUC": "Phe",
@@ -17,6 +15,7 @@ def traducao_RNAm(st):
             "UAC": "Tyr",
             "UGU": "Cys",
             "UGC": "Cys",
+            "UGG": "Trp",
             "CUU": "Leu",
             "CUC": "Leu",
             "CUA": "Leu",
@@ -65,11 +64,15 @@ def traducao_RNAm(st):
             "GGA": "Gly",
             "GGG": "Gly",
         }
-        
-        tRNA = RNAxAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + RNAxAm[st[6:9]]
-        return tRNA
+        if st[0:3] == "AUG":
+            return startRNAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + RNAxAm[st[6:9]]
+        elif "UAA" == st[6:9] or "UAG" == st[6:9] or "UGA" == st[6:9]:
+            return RNAxAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + stopRNAm[st[6:9]]
+        else:
+            return RNAxAm[st[0:3]] + '-' + RNAxAm[st[3:6]] + '-' + RNAxAm[st[6:9]]
     except KeyError:
-        print('Sequência incorreta!')
+        return 'Sequência incorreta!'
 
 
-print(traducao_RNAm(str(input("Sequência: "))))
+while True:
+    print(traducao_RNAm(input("Sequência: ")))
