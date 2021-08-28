@@ -1,5 +1,5 @@
-# Nome: Douglas Vieira dos Santos
-# DRE: 121062791
+# Douglas Vieira
+# @ansattz
 
 #1a - Não delete nem modifique esta linha
 def contatinhosApp(lista,tel):
@@ -8,11 +8,9 @@ def contatinhosApp(lista,tel):
     j = lista[1]
     if tel in j:
         list.remove(j,tel)
-        print(True)
-        return lista
+        return True
     else:
-        print(False)
-        return lista
+        return False
     
 #Casos de teste da questão 1a - Não delete nem modifique esta linha
 print(contatinhosApp(['Bruno Campos', ['2199112233', '2133992211'], 'brunoc91@emailquente.com.br', '@brunocampos91'],'2199112233'))
