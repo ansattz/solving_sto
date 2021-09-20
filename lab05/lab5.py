@@ -73,9 +73,7 @@ def traducao_RNAm(st):
     return tRNA
 
 
-#2 O usuário precisa saber que a sequência pode ter sido digitada incorretamente.
-# Deixarei uma sugestão mais elaborada dessa solução, porém, mantenho o dicionário simplificado.
- 
+#2 
 # def traducao_RNAm(st):
 #     try:
 #         startRNAm = {"AUG": "METIONINA"}
