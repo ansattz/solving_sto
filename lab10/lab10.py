@@ -1,5 +1,6 @@
-# Nome: Douglas Vieira dos Santos
-# DRE: 121062791
+# Douglas Vieira
+# @ansattz
+
 
 #1 - Não delete nem modifique esta linha
 import readline
