@@ -40,12 +40,12 @@ def mat_vezes_numero(mat, n):
     l=len(mat)
     for i in range(l):
         row=[]
-        for j in len(mat[i]):
+        for j in range(len(mat[0])):
             row.append(mat[i][j]*n)
         m.append(row)
     return m
 # mat_vezes_numero([[1, 0, 0], [0, 1, 0], [0, 0, 1]],5)
-mat_vezes_numero([],1/6)
+print(mat_vezes_numero( [[[1, 2, 3]], 10], 2))
 
 ## (*) Questão 2
 ## 
@@ -116,8 +116,6 @@ def quem_ligou(agenda, tel):
 
 # quem_ligou(agenda, '21988881122')
 # quem_ligou(agenda, '19')
-
-
 
 
 ## (*) Questão 4

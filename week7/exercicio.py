@@ -33,6 +33,8 @@ def quantas_vezes():
       n+=1
     return (n,) + (x, y)
 
+print(quantas_vezes())
+
 ## (*) Sugestão de como fazer
 ## 
 ## Primeiro aprenda a usar o módulo random.  Precisamos importá-lo e
