@@ -1,7 +1,3 @@
-# Douglas Vieira
-# @ansattz
-
-
 """Exercícios básicos de geometria"""
 import math
 # Distância entre dois pontos dada as coordenadas.

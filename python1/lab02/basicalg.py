@@ -1,8 +1,4 @@
-# Douglas Vieira
-# @ansattz
-
-
-"""Exercícios de Algebra básica."""
+"""Exercícios de Algebra elementar."""
 import math
 
 # Primeira raiz de uma equação polinomial quadrática.
