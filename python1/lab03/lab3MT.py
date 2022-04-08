@@ -18,21 +18,21 @@ print(PosNegZero(-1))
 
 
 # Exercício 2.
-def classificacao(cv, ce, cs, fv, fe, fs):
-    """ A função retorna ou um vencedor ou um empate dado dois times;
+def classificacao(vv, ve, vs, vv, ve, vs):
+    """ A função retorna ou um venvedor ou um empate dado dois times;
     int, int, int, int, int, int -> str """
-    cormengo1=3*cv+ce
-    flaminthians1=3*fv+fe
-    cormengo2=3*cv+ce+cs
-    flaminthians2=3*fv+fe+fs    
-    if cormengo1>flaminthians1:
-        return "Cormengo"
-    elif flaminthians1>cormengo1:
-        return "Flaminthians"
-    elif flaminthians2>cormengo2:
-        return "Flaminthians"
-    elif cormengo2>flaminthians2:
-        return "Cormengo"
+    flamengo1=3*vv+ve
+    vasco1=3*vv+ve
+    flamengo2=3*vv+ve+vs
+    vasco2=3*vv+ve+vs    
+    if flamengo1>vasco1:
+        return "Flamengo"
+    elif vasco1>flamengo1:
+        return "Vasco"
+    elif vasco2>flamengo2:
+        return "Vasco"
+    elif flamengo2>vasco2:
+        return "Flamengo"
     else:
         return "Empate"
 

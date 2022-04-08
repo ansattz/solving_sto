@@ -15,7 +15,6 @@ def rreal(a,b,c):
     return ((-b - math.sqrt(disc))/2*a)
     
     
-
 # Segunda raiz de uma equação polonimial quadrática.
 a = float(input("Coeficiente principal a: "))
 b = float(input("Coeficiente segundário b: "))
@@ -53,6 +52,7 @@ b = float(input("Termo final: "))
 r = float(input("Razão: "))
 print(pa(a,b,r))
 
+
 """Média"""
 termo1 = int(input("Primeiro termo: "))
 termo2 = int(input("Segundo termo: "))
@@ -84,6 +84,7 @@ def mmedia(x,y,z):
 
 menor_somam=mmedia(2,3,5)
 print(menor_somam)
+
 
 # Maior termo menos a média entre os três.
 termo1 = int(input("Primeiro termo: "))

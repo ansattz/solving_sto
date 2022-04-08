@@ -1,19 +1,24 @@
 # Douglas Santos
 # @ansattz
 
-#1 - Não delete nem modifique esta linha
+
+#1
 def lettercount(s):
+    """Conta as letras de uma frase;
+    str -> int"""
     phrase = str.split(s)
     letters = len(phrase)
     return letters
 
 
-#Casos de teste da questão 1 - Não delete nem modifique esta linha
+#Casos de teste da questão 1
 print(lettercount("Vamos terminar este lab hoje mesmo"))
 
 
-# 2 - Não delete nem modifique esta linha
+# 2
 def phrasecount(s):
+    """Conta o número de frases que aparecem no texto;
+    str -> int"""
     fpoint = str.replace(s,'...','.')
     phtype1 = str.count(fpoint,'.')
     phtype2 = str.count(s,'!')
@@ -22,13 +27,15 @@ def phrasecount(s):
     phrases = phtype1 + phtype2 + phtype3
     return phrases
 
-#Casos de teste da questão 2 - Não delete nem modifique esta linha
+#Casos de teste da questão 2
 print(phrasecount("O produto! Sim... o produto de ponto euclidiano. Fornece uma maneira de definir o tamanho ou a norma de um vetor em Rn."))
 
 
 
-#3 - Não delete nem modifique esta linha
+#3
 def modifyph(s):
+    """Caracteres de pontuação serão substituídos por espaços;
+    str -> str"""
     fpoint = str.replace(s,'...','.')
     tpoint = str.replace(fpoint,'..','.')
     esppoint = str.replace(tpoint,'.',' ')
@@ -39,14 +46,16 @@ def modifyph(s):
     espint = str.replace(espexcl,'?',' ')
     return espint
 
-#Casos de teste da questão 3 - Não delete nem modifique esta linha
+#Casos de teste da questão 3
 print(modifyph("Toda base de um espaço vetorial - que pode ter o mesmo número de vetore - pode ser referenciada como a dimensão do espaço vetorial dado o seu número de vetores!"))
 
 
 
 
-#4 - Não delete nem modifique esta linha
+#4
 def revphr(s):
+    """Frase será retornada na ordem inversa, sem letras maiúsculas e sempre pontuação;
+    str -> str"""
     modfpoint = str.replace(s,'...','.')
     fpoint = str.replace(modfpoint,'.','')
     reexcl = str.replace(fpoint,'!','')
@@ -64,34 +73,42 @@ def revphr(s):
     return " ".join(revletters)
 
 
-#Casos de teste da questão 4 - Não delete nem modifique esta linha
+#Casos de teste da questão 4
 print(revphr("A SSI RU."))
 
 
-#5 - Não delete nem modifique esta linha
+#5
 def insere(lista_numero,n):
+    """A lista será ordenada (crescente) e o inteiro n será colocado na posição correta, continuando ordenada;
+    list, int -> list"""
     addint = lista_numero + [n,]
     list.sort(addint)
     return addint
 
-#Casos de teste da questão 5 - Não delete nem modifique esta linha
+#Casos de teste da questão 5
 print(insere([1,2,15,5,0,8,9], 4))
 
 
-#6 - Não delete nem modifique esta linha
+#6
 def greatlist(lista,n):
+    """Dada uma lista de inteiros e um inteiro n,
+    teremos outra lista com todos os inteiros da
+    lista original maiores que n ordenados (crescente);
+    list, int -> list"""
     list.append(lista,n)
     list.sort(lista)
     ind = list.index(lista,n)
     return lista[ind+1:]
 
 
-#Casos de teste da questão 6 - Não delete nem modifique esta linha
+#Casos de teste da questão 6
 print(greatlist([1,2,5,9,15,4],8))
 
 
-#7 - Não delete nem modifique esta linha
+#7
 def acima_da_media(lista):
+    """Retornará uma lista com inteiros acima da média da lista original;
+    list -> list"""
     nullist = []
     orlist = lista[:]
     media = sum(lista)/len(lista)
@@ -107,5 +124,5 @@ def acima_da_media(lista):
 
 
 
-#Casos de teste da questão 7 - Não delete nem modifique esta linha
+#Casos de teste da questão 7
 print(acima_da_media([1, 6, 9, 4, 0, 8, 5, 7]))

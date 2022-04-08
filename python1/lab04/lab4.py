@@ -2,8 +2,11 @@
 # @ansattz
 
 
-#1  - Não delete nem modifique esta linha
+#1
 def SIGA(a,b,c,d):
+    """ A função retorna uma tupla, cujo primeiro elemento é o nome do aluno, 
+    o segundo elemento é a média, e o terceiro elemento a situação do aluno;
+    str, float, float, float -> tup """
     media=(b+c+d)/3
     media1dec='{0:0.1f}'.format(media)
     if media >= 7:
@@ -13,7 +16,7 @@ def SIGA(a,b,c,d):
     elif media < 5:
         return (a, media1dec, 'Reprovado')
 
-#Casos de teste da questão 1 - Não delete nem modifique esta linha
+#Casos de teste da questão 1
 print(SIGA('Douglas',6.5,8.7,8))
 print(SIGA('Douglas',1,2.7,3))
 print(SIGA('Douglas',2,5,3))
@@ -29,13 +32,15 @@ SIGA('Douglas',6.5,8.1,8.1)
 SIGA('Douglas',10,10,10)
 
 
-#2  - Não delete nem modifique esta linha
+#2
 def ano(ano):
+    """Recebe o ano de nascimento e retorna o signo correspondendo (zodíaco chinês);
+    int -> str"""
     t=('Macaco','Galo','Cão','Porco','Rato','Boi','Tigre','Coelho','Dragão','Serpente','Cavalo','Carneiro')
     sig=t[(ano%12)]
     return sig
 
-#Casos de teste da questão 2 - Não delete nem modifique esta linha
+#Casos de teste da questão 2
 print(ano(1903))
 print(ano(1932))
 print(ano(1957))
@@ -51,8 +56,10 @@ ano(1965)
 ano(2016)
 
 
-#3  - Não delete nem modifique esta linha
+#3
 def numsear(s):
+    """Identificação de número de telefone fixo ou de telefone celular;
+    str -> tup"""
     if len(s) > 11:
         return ('','')
     elif len(s) ==10:
@@ -64,7 +71,7 @@ def numsear(s):
     else:
         return ('','')
 
-#Casos de teste da questão 3 - Não delete nem modifique esta linha
+#Casos de teste da questão 3
 print(numsear("21912316165"))
 print(numsear("1132316165"))
 print(numsear("71912316165"))
@@ -80,8 +87,10 @@ numsear("912316165")
 numsear("11532316165")
 
 
-#4  - Não delete nem modifique esta linha
+#4
 def format_data(s):
+    """A função retorna os possíveis formatos em que a data fornecida possa ser interpretada;
+    str -> tup"""
     dd=int(s[0:2])
     yy=int(s[6:8])
     mm=int(s[3:5])
@@ -107,7 +116,7 @@ def format_data(s):
         return ()
 
 
-#Casos de teste da questão 4 - Não delete nem modifique esta linha
+#Casos de teste da questão 4
 print(format_data('01/12/55'))
 print(format_data('98/25/07'))
 print(format_data('01/01/00'))

@@ -2,7 +2,7 @@
 # @ansattz
 
 
-# 1  - Não delete nem modifique esta linha
+# 1
 def abss(x):
     """ Retornar o valor absoluto de inteiros e de números complexos;
     int -> float
@@ -13,7 +13,7 @@ def abss(x):
 print(abss(complex(-3,-4)))
 
 
-#2  - Não delete nem modifique esta linha
+#2
 def qrreal(a,b,c):
     """ Função que retorna a quantidade de raízes reais de uma equação polinomial de grau n=2;
     int, int, int -> str """
@@ -28,7 +28,7 @@ def qrreal(a,b,c):
 print(qrreal(6,-12,-210))
 
 
-#3  - Não delete nem modifique esta linha
+#3
 def strrep(strg,x):
     """ A função retorna uma string com n repetições;
     str, int -> str """
@@ -37,7 +37,7 @@ def strrep(strg,x):
 print(strrep('Feliz aniversário!!\n', 5000))
 
 
-#4  - Não delete nem modifique esta linha
+#4
 def calen(x,y,z):
     """ A função retorna o dia, mês e o ano em notação padrão de data;
     Dia,mês e ano como entradas;
@@ -59,7 +59,7 @@ def calen(x,y,z):
 print(calen(2,8,21))
 
 
-#5  - Não delete nem modifique esta linha
+#5
 #Número mínimo de testes: 5
 def funcp(x):
     """ A função retorna a imagem de um função matemática definida em partes para valores
@@ -83,7 +83,7 @@ def funcp(x):
 print(funcp(2))
 
 
-#6a - Não delete nem modifique esta linha
+#6a
 def desc(sb):
     """ A função retorna o valor do desconto de INSS dado o salário bruto como entrada;
     float -> float """
@@ -100,7 +100,7 @@ def desc(sb):
         return "Valor incorreto"
 
 
-#6b - Não delete nem modifique esta linha
+#6b
 def desc_ir(sb):
     """ A função retorna o valor do desconto de IR dado o salário bruto como entrada;
     float -> float """
@@ -117,7 +117,7 @@ def desc_ir(sb):
         return "Valor incorreto"
 
 
-#6c - Não delete nem modifique esta linha
+#6c
 def sal(sb):
     """ A função retorna o salário líquido dado o salário bruto como entrada utilizando
     as funções de desconto de INSS e IR

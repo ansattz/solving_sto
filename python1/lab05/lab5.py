@@ -2,7 +2,7 @@
 # @ansattz
 
 
-#1a - Não delete nem modifique esta linha
+#1a
 def incluir_contato(nome, telefone='', email='', instagram=''):
     """ A função inclui um contato na lista sendo o primeiro argumento prioritário;
     str, str, str, str -> list """
@@ -11,7 +11,7 @@ def incluir_contato(nome, telefone='', email='', instagram=''):
     return newcontactinfo
 
 
-#Casos de teste da questão 1a - Não delete nem modifique esta linha
+#Casos de teste da questão 1a
 print(incluir_contato('R. Giggs',))
 print(incluir_contato('Lahm','55558888','w@gmail.com'))
 print(incluir_contato('Robin van Persie','55559999','robin@gmail.com', '@rvp'))
@@ -23,7 +23,7 @@ incluir_contato('Robin van Persie','55559999','robin@gmail.com', '@rvp')
 incluir_contato('Lehmann','','leh@protonmail.com',)
 
 
-#1b - Não delete nem modifique esta linha
+#1b
 def editar_contato(lista, x, st):
     """ A função edita e informa se uma informação foi editada ou se ela já estava na lista;
     list, int, str - > bool """
@@ -37,7 +37,7 @@ def editar_contato(lista, x, st):
         return True
 
 
-# #Casos de teste da questão 1b - Não delete nem modifique esta linha
+# #Casos de teste da questão 1b
 print(editar_contato(['Anderson',['21332312','56879791'],'andr@gmail.com','@ander'],1,'21332312'))
 print(editar_contato(['A. Arshavin',['21332312','56879791'],'aarsh@gmail.com','@arshv'],1,'56879791'))
 print(editar_contato(['A.Cole',['21332312','56879791'],'cole@gmail.com','@acole'],1,'98244587'))
@@ -55,7 +55,7 @@ editar_contato(['Paul Scholes',['21332312','56879791'],'pscholes@gmail.com','@pp
 editar_contato(['S. Gerrard ',['21332312','56879791'],'grr@gmail.com','@gerrardd'],2,'gerrard@aol.com')
 
 
-#2  - Não delete nem modifique esta linha
+#2 
 def traducao_RNAm(st):
     """ A função separa cada códon da sequência de nucleotídeos do ARN de forma que nos
     retorne sua correspondência com os aminoácidos;
@@ -99,7 +99,7 @@ def traducao_RNAm(st):
 #     print(traducao_RNAm(input("Sequência: ")))
 
 
-#Casos de teste da questão 2 - Não delete nem modifique esta linha
+#Casos de teste da questão 2
 print(traducao_RNAm('UUUUUAUCU'))
 print(traducao_RNAm('CAAUAUUCU'))
 print(traducao_RNAm('UUAAAGUCU'))
